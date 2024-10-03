@@ -1,6 +1,13 @@
 /*css tret de https://github.com/LFeh/piano/blob/master/dev/assets/css/style.css*/
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+
 body{
     background-image: url("../img/background/background11.jpg");
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16pt;
 }
 
 .piano {
@@ -68,4 +75,68 @@ body{
 .key .black-key.active {
     border-bottom-width: 3px;
     top: 0;
+}
+
+.contenedorBusq{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-top:20px;
+    padding: 20px 10px 30px 10px;
+}
+
+section div, div div{
+    margin:5px;
+}
+
+.botonBusq, .botonCanc{
+    background-color: red;
+    color: white;
+    padding: 0 20px 0 20px;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+    border: 0;
+
+}
+
+.botonBusq:hover, .botonCanc:hover{
+    background-color: rgb(150, 0, 0);
+    cursor: pointer;
+}
+
+.botonBusq{
+    height: 40px;
+    width: 80px;
+}
+
+.botonCanc{
+    grid-row: span 2;
+    margin-left: auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.cancion{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+p{
+    margin: 0 10px 0 0;
+}
+
+.titulo{
+    font-size: 20pt;
+    font-weight: bold;
 }
