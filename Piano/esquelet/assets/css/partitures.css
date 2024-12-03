@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 
-body, section > button{
+body, section button, nav button{
     margin: 0;
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
@@ -24,16 +24,17 @@ nav{
     align-items: center;
 }
 
-a{
-    text-decoration: none;
+nav > button{
+    background: none;
     border-radius: 10px;
     border: 1px solid black;
     padding: 10px;
     color: white;
     margin-right: 10px;
+    cursor: pointer;
 }
 
-a:hover, section > button:hover{
+nav > button:hover, section > button:hover{
     background-color: rgb(150, 0, 0);
 }
 
@@ -60,7 +61,6 @@ table{
 
 th{
     background-color: red;
-    border: 1px solid white;
     color: white;
     width: 33.33%;
 }

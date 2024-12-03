@@ -10,21 +10,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
     <link rel="icon" type="image/ico" href="assets/img/icons/favicon.ico">
-    <link rel="stylesheet" href="assets/css/partitures.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <title>Partitures</title>
 </head>
 <body>
-    <header>
-        <h1>
-            Score Finder
-        </h1>
-        <nav>
-            <button>Partitures</button>
-            <button onclick="obrirLogin()">Login</button>
-        </nav>
-    </header>
-    <section>
-        <button>Nova Partitura</button>
-    </section>
+    <h1>
+        Score Finder
+    </h1>
+    <form action="" method="post">
+        <label for="correo">Correu electrònic</label>
+        <input type="email" name="correo" required>
+        <label for="contraseña">Password</label>
+        <input type="password" name="contraseña" required>
+        <button type="submit">Entrar</button>
+    </form>
 </body>
 </html>
